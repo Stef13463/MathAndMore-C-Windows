@@ -5,9 +5,7 @@ Number::Number(double number)
 	this->number = number;
 }
 
-
-
-double Number::calculateFor(double x ) 
+double Number::calculateFor(double x) 
 {
 	return this->number;
 }
