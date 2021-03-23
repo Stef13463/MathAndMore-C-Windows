@@ -27,6 +27,12 @@
     <ClInclude Include="TerminalClasses.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Lexer.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Token.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +42,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="TerminalClasses.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Lexer.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
