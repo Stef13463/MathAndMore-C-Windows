@@ -18,45 +18,24 @@
     <ClInclude Include="AbstractExpression.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Plus.h">
+    <ClInclude Include="BinäreOperatoren.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Number.h">
+    <ClInclude Include="UnäreOperatoren.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Minus.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="Mal.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="Division.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="Variable.h">
+    <ClInclude Include="TerminalClasses.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Plus.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="Number.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="Minus.cpp">
+    <ClCompile Include="BinäreOperatoren.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="Mal.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="Division.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="Variable.cpp">
+    <ClCompile Include="TerminalClasses.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

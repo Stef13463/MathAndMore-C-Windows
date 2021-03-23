@@ -1,15 +1,15 @@
 #include <iostream>
-#include "Number.h"
-#include "Plus.h"
+#include "BinäreOperatoren.h"
 #include "AbstractExpression.h"
-#include "Variable.h"
+#include "TerminalClasses.h"
+
 
 int main()
 {
 
 
 	
-	{
+	
 
 
 		Number n1 = Number(10);
@@ -19,8 +19,11 @@ int main()
 
 		std::cout << p.calculateFor(33) << std::endl;
 
+		system("PAUSE");
+		
 
-	}
+
+	
 	
 
 	

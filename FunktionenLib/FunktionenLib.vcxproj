@@ -20,21 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractExpression.h" />
-    <ClInclude Include="Division.h" />
-    <ClInclude Include="Mal.h" />
-    <ClInclude Include="Minus.h" />
-    <ClInclude Include="Number.h" />
-    <ClInclude Include="Plus.h" />
-    <ClInclude Include="Variable.h" />
+    <ClInclude Include="BinäreOperatoren.h" />
+    <ClInclude Include="TerminalClasses.h" />
+    <ClInclude Include="UnäreOperatoren.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Division.cpp" />
+    <ClCompile Include="BinäreOperatoren.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Mal.cpp" />
-    <ClCompile Include="Minus.cpp" />
-    <ClCompile Include="Number.cpp" />
-    <ClCompile Include="Plus.cpp" />
-    <ClCompile Include="Variable.cpp" />
+    <ClCompile Include="TerminalClasses.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
