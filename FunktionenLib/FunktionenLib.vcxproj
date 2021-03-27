@@ -19,18 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AbstractExpression.h" />
-    <ClInclude Include="BinäreOperatoren.h" />
-    <ClInclude Include="Lexer.h" />
-    <ClInclude Include="TerminalClasses.h" />
-    <ClInclude Include="Token.h" />
-    <ClInclude Include="UnäreOperatoren.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BinäreOperatoren.cpp" />
-    <ClCompile Include="Lexer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="TerminalClasses.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
