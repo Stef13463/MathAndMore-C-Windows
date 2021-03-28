@@ -1,21 +1,21 @@
+/*
+
 #pragma once
-#include "AbstractExpression.h"
 #include <vector>
-#include <string>
 #include "Token.h"
-#include "UnäreOperatoren.h"
-#include "TerminalClasses.h"
-class Parser
-{
+#include "AbstractExpression.h"
+class Parser {
+
+private: 
+	std::vector<Token> tokens;
 
 public:
-	Parser() {};
+
+	Parser(std::vector<Token> tokens);
 	~Parser() {};
 
-	AbstractExpression* parse(std::vector<Token> tokens);
+	AbstractExpression* getTree(std::vector<Token> tokens);
 
-	void static removeKlammern(std::vector<Token> &tokens);
-
-	int static getPositionOfBestToken(std::vector<Token> tokens)
 
 };
+*/

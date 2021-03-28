@@ -1,37 +1,38 @@
+/*
+
 #include "Parser.h"
 
-AbstractExpression* Parser::parse(std::vector<Token> tokens)
+Parser::Parser(std::vector<Token> tokens)
 {
-
-    removeKlammern(tokens);
-
-	int pos = getPositionOfBestToken(tokens);
-	
-	Token token = tokens[pos];
-
-		if (token.getRank() == 0)
-		{
-			if (token.getTyp() == "NUMBER");
-			{
-				
-				return new Number(std::stod(token.getValue()));
-
-			}
-
-
-		}
-
-		if (token.getRank() == 1)
-		{
-
-			
-
-		}
-
-
-	
-
-
-
-    return nullptr;
+	this->tokens = tokens;
 }
+
+AbstractExpression* Parser::getTree(std::vector<Token> tokens)
+{
+	removeUnnecessaryBrackets(tokens);
+	int bestOperator = findBestOperator(tokens);
+
+	Token bestToken  = tokens[bestOperator];
+
+	if (bestToken.getTyp() == "NUMBER")
+	{
+		double number = std::stod(bestToken.getTyp());
+
+		return new Number(number);
+
+	}
+
+	if (bestToken.getTyp() == "VARIABLE")
+	{
+		return new Variable();
+	}
+
+	if (bestToken.getTyp() == "FUNKTION")
+	{
+		return new IntermidiateFunktion()
+
+	}
+
+
+}
+*/

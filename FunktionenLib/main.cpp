@@ -1,7 +1,6 @@
 #include <iostream>
-#include "BinäreOperatoren.h"
-#include "AbstractExpression.h"
-#include "TerminalClasses.h"
+#include "Lexer.h"
+
 
 
 int main()
@@ -10,15 +9,27 @@ int main()
 
 	
 	
+	try
+	{
+		Lexer lex = Lexer("");
+		auto tokens = lex.getToken();
 
+		for (int i = 0; i < tokens.size(); i++)
+		{
+			std::cout << tokens[i].toString() << std::endl;
 
-		Number n1 = Number(10);
-		Variable var = Variable();
+		}
 
-		Plus p = Plus(&n1, &var);
+	}
+	catch (...)
+	{
+		std::cout << "Fehler";
+	}
+	
+	
+	
 
-		std::cout << p.calculateFor(33) << std::endl;
-
+		std::cout << std::endl;
 		system("PAUSE");
 		
 

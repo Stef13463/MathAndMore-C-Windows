@@ -3,28 +3,26 @@
 Token::Token(std::string typ, std::string value)
 {
 	this->typ = typ;
-	this->value = value;	
-	this->hasValue = true;
+	this->value = value;
 }
 
 Token::Token(std::string typ)
 {
 	this->typ = typ;
-	this->value = '\0';
-	this->hasValue = false;
-	
-
+	this->value = "\0";
 }
 
 std::string Token::getTyp()
 {
-	return typ;
+	return this->typ;
 }
 
 std::string Token::getValue()
 {
-	if (!hasValue) throw "TOKEN_HAS_NO_VALUE_EXCEPTION";
-
-	return value;
+	return this->value;
 }
 
+std::string Token::toString()
+{
+	return  "TokenTyp: " + typ + " |  TokenValue: " + value;
+}
