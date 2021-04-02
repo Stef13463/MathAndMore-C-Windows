@@ -6,12 +6,11 @@
 int main()
 {
 
-
 	
 	
 	try
 	{
-		Lexer lex = Lexer("");
+		Lexer lex = Lexer("4 $pi * x");
 		auto tokens = lex.getToken();
 
 		for (int i = 0; i < tokens.size(); i++)
@@ -30,7 +29,7 @@ int main()
 	
 
 		std::cout << std::endl;
-		system("PAUSE");
+	//	system("PAUSE");
 		
 
 

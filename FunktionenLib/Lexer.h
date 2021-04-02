@@ -20,9 +20,12 @@ class Lexer {
 	void generateNumberToken();
 	void generateVariableToken();
 	void generateFunktionToken();
+	void generateConstantToken();
 	bool isVariable();
 	bool isBuchstabe(char c);
 	bool isFunktion();
+	bool isConstant();
+	
 public:
 
 	Lexer(std::string plainText);

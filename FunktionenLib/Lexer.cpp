@@ -94,14 +94,34 @@ void Lexer::generateVariableToken()
 	std::string currentVariableName;
 	currentVariableName.push_back(currentChar);
 	next();
-
-	while (isBuchstabe(currentChar) || currentChar == '_')
+	if (currentChar == '_')
 	{
 		currentVariableName.push_back(currentChar);
 		next();
+
+		while (isBuchstabe(currentChar) || isdigit(currentChar) || (currentChar == '_'))
+		{
+			currentVariableName.push_back(currentChar);
+			next();
+		}
+
 	}
 
 	tokens.push_back(Token("VARIABLE", currentVariableName));
+}
+
+void Lexer::generateConstantToken()
+{
+	std::string currentVariableName;
+	currentVariableName.push_back(currentChar);
+	next();
+	while(isBuchstabe(currentChar))
+	{
+		currentVariableName.push_back(currentChar);
+		next();
+
+	}
+	tokens.push_back(Token("CONSTANT", currentVariableName));
 }
 
 bool Lexer::isFunktion()
@@ -117,6 +137,17 @@ bool Lexer::isFunktion()
 	return true;
 
 
+}
+
+bool Lexer::isConstant()
+{
+	if(currentChar == '$')
+	{
+		
+		return true;
+			
+	}
+	return false;
 }
 
 
@@ -174,7 +205,6 @@ void Lexer::createTokens()
 			tokens.push_back(Token("KLAMMER_ZU"));
 			next();
 		}
-
 		
 
 		else if (isFunktion())
@@ -182,6 +212,10 @@ void Lexer::createTokens()
 
 			generateFunktionToken();
 
+		}
+		else if (isConstant())
+		{
+			generateConstantToken();
 		}
 		else if (true)
 		{
